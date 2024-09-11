@@ -51,7 +51,7 @@ export default function Services() {
                 <hr className="border-b-4 border-black w-44 mx-auto mb-8" />
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {services.map((map, index) => (
-                        <div key="index" className="max-w-md mx-auto bg-[#3282B8] rounded-lg overflow-hidden shadow-lg h-full"> 
+                        <div key={index} className="max-w-md mx-auto bg-[#3282B8] rounded-lg overflow-hidden shadow-lg h-full"> 
                             <img src={map.src} alt={map.alt} className={map.style} />    
                             
                             <div className="p-6 h-full">
